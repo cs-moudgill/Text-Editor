@@ -1,0 +1,41 @@
+hr{
+  width: 1110px;
+}
+h1{
+  color: coral;
+  margin: 20px 0 20px 0;
+  font-family: 'Lobster', cursive;
+}
+.font{
+  font-family: 'Source Code Pro', monospace;
+ 
+}
+
+.bold{
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+}
+.underline{
+  text-decoration: underline;
+}
+#text-input{
+  min-height: 300px;
+  border-radius: 10px;
+}
+#text-output{
+  min-height: 300px;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.left{
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}

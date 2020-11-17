@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/93bcc14741.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Text Editor</title>
+</head>
+<body>
+
+  <div class="container text-center">
+    <div>
+      <h1>Text Editor</h1>
+    </div>
+
+    <div>
+      <button type="button" class="btn btn-light" onclick="format('bold',0)">Bold</button>
+      <button type="button" class="btn btn-light" onclick="format('italic',1)">Italic</button>
+      <button type="button" class="btn btn-light" onclick="format('underline',2)">Underline</button>
+      <button type="button" class="btn btn-light" onclick="indent('left')"><i class="fas fa-align-left"></i></button>
+      <button type="button" class="btn btn-light" onclick="indent('center')"><i class="fas fa-align-center"></i></button>
+      <button type="button" class="btn btn-light" onclick="indent('right')"><i class="fas fa-align-right"></i></button>
+    </div>
+    <hr>
+
+    <div class="row font">
+      <div class="col">
+        <label for="text-input">Your Document Text</label>
+        <textarea class="form-control" id="text-input" oninput="updateText()" cols="30" rows="10"></textarea>
+      </div>
+      <div class="col">
+        <label for="text-input">Your Formatted Text</label>
+        <div id="text-output">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
